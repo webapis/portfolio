@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.top-bar {
+  height: 155px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.my-img {
+  width: 120px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.img-decription {
+  padding: 5px;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.nav {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+
+  padding-right: 10px;
+ a{
+    background-color: #2e7d32;
+    padding-right: 5px;
+    width: 130px;
+    margin: 5px;
+    height: 40px;
+    text-align: center;
+    line-height: 2.5;
+    text-decoration: none;
+    color: #e1f5fe;
+  }
+}
+
+h1,
+h2 {
+  padding: 0;
+  margin: 0;
+  text-align: start;
+}
+
+
+.icon {
+  background-color: transparent;
+}
+.icon-img {
+  background-color: #e0f2f1;
+  border-radius: 50%;
+  height: 20px;
+  padding: 3px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+
+}
+.icons-container {
+  margin-top: 10px;
+  display: flex;
+  height: 30px;
+}
+
+.container {
+  display: flex;
+}
+.certification-body,
+.codelab-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 10px;
+  padding-bottom: 30px;
+}
+
+body {
+  background-color: #c8e6c9;
+  padding-top: 170px;
+}
+
+.codelab-body {
+  height: 300px;
+}
