@@ -12,7 +12,7 @@ const freelancerDescription = `Successfully completed the freeCodeCamp.org  Fron
 export default function CertificateContainer() {
   return (
     <div className="certification-root">
-      <h1>CERTIFICATES</h1>
+ 
 
       <div className='certification-container'>
         <CertificateComponent

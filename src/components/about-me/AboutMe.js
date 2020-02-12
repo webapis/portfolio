@@ -12,7 +12,7 @@ export default function AboutMe({ title }) {
     <div className='about-me'>
       <h1>{title} </h1>
       <p>
-        I am experience Web Front End Developer. My programming language is
+        I am experienced Frontend Web Developer. My programming language is
         Javascript. React.js is my preffered choice for developing client side
         application. Currently I am spending time experimenting real time
         communication applications with WebRTC.

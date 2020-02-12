@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import myImage from './my-picture.jpg';
 import SocialIconContainer from './components/social-icons/social-icon-container';
 import CertificateContainer from './components/certificate/certificate-container';
 import CodeLabContainer from './components/codelab/CodeLabContainer';
 import SkillsContainer from './components/skills/SkillContainer';
 import AboutMeContainer from './components/about-me/AboutMe';
+import TabContainer from './components/TabContainer';
 import './App.css';
 
 function App() {
+  const appRef = useRef();
+  function strollTo(x) {
+    appRef.current.scroll({
+      top: 500,
+      left: 100,
+      behavior: 'smooth'
+    });
+  }
+
   return (
-    <div className='App'>
+    <div className='App' ref={appRef}>
       <div className='top-bar'>
         <div className='img-decription'>
           <div className='image-container'>
@@ -22,29 +32,33 @@ function App() {
           </div>
         </div>
         <div className='nav'>
-          <a href='#'>WHO AM I</a>
-          <a href='#'>CERTIFICATES</a>
-          <a href='#'>SKILLS</a>
-          <a href='#'>CODELAB</a>
-          <a href='#'>CONTACT ME</a>
-        </div>
-      </div>
-      <div className='aboutme-body'>
-        <AboutMeContainer title='WHO AM I' />
-      </div>
-      <div className='skills-body'>
-        <h1>SKILLS</h1>
-        <SkillsContainer />
-      </div>
-      <div className='certification-body'>
-        <div className='container'>
-          <CertificateContainer />
-        </div>
-      </div>
+          <a href='#/' onClick={strollTo}>
+            WHO AM I
+          </a>
+          <a href='#/' onClick={() => strollTo(400)}>
+            SKILLS
+          </a>
+          <a href='#/' onClick={() => strollTo(200)}>
+            CERTIFICATES
+          </a>
 
-      <div className='codelab-body'>
-        <h1>CODE LAB</h1>
-        <CodeLabContainer />
+          <a href='#/'>CODELAB</a>
+        </div>
+      </div>
+      <div className='main-content' ref={appRef}>
+        <TabContainer title='WHO AM I'>
+          <AboutMeContainer />
+        </TabContainer>
+        <TabContainer title='SKILLS'>
+          <SkillsContainer />
+        </TabContainer>
+
+        <TabContainer title='CERTIFICATES'>
+          <CertificateContainer />
+        </TabContainer>
+        <TabContainer title='CODE LAB'>
+          <CodeLabContainer />
+        </TabContainer>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import SkillComponent from './SkillComponent';
 import './css/style.css';
 export default function SkillContainer({ children }) {
   return (
-    <div className='skill-container'>
+    <div className='skill-container' >
       <div className='skill-level'>
         <div className='level-column'>
           <div className='skill-level-title tool'>TOOLS</div>
@@ -16,7 +16,7 @@ export default function SkillContainer({ children }) {
           {' '}
           <div className='skill-level-title'>MIDDLE</div>
         </div>
-        <div className='level-column'>
+        <div className='level-column' >
           {' '}
           <div className='skill-level-title'>ADVANCED</div>
         </div>
@@ -81,6 +81,7 @@ export default function SkillContainer({ children }) {
         middle={true}
         advanced={false}
       />
+     
     </div>
   );
 }

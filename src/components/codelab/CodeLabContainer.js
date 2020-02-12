@@ -51,7 +51,7 @@ const VideoConference = () => (
 
 export default function CodeLabContainer() {
   return (
-    <div className='codelab-container'>
+    <div className='codelab-container' >
       <CodeLabComponent
         description='Peer to Peer Video Chat using WebRTC RTCPeerConnection'
         title='Video Chat'

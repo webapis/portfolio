@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 body {
@@ -19,6 +20,7 @@ body {
   left: 0;
   top: 0;
   width: 100%;
+  border-bottom: #c8e6c9 solid 10px;
 }
 
 .my-img {
@@ -83,31 +85,26 @@ h2 {
 
 .container {
   display: flex;
-
 }
-.certification-body,
-.codelab-body,
-.skills-body,.aboutme-body {
+.tab-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: white;
   margin: 10px;
- 
-  height: 350px;
+  height: 400px;
 }
 
 body {
   background-color: #c8e6c9;
-  padding-top: 200px;
+  padding-top: 155px;
 }
 
-
-
 .skills-body {
-
   display: flex;
   justify-content: flex-start;
 }
+
 
