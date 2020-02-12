@@ -13,7 +13,9 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 10px;
+  margin-top: 0;
   position: fixed;
+  z-index: 5;
   left: 0;
   top: 0;
   width: 100%;
@@ -31,7 +33,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .nav {
@@ -40,7 +41,7 @@ body {
   justify-content: center;
 
   padding-right: 10px;
- a{
+  a {
     background-color: #2e7d32;
     padding-right: 5px;
     width: 130px;
@@ -60,7 +61,6 @@ h2 {
   text-align: start;
 }
 
-
 .icon {
   background-color: transparent;
 }
@@ -74,7 +74,6 @@ h2 {
 .description {
   display: flex;
   flex-direction: column;
-
 }
 .icons-container {
   margin-top: 10px;
@@ -84,23 +83,31 @@ h2 {
 
 .container {
   display: flex;
+
 }
 .certification-body,
-.codelab-body {
+.codelab-body,
+.skills-body,.aboutme-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: white;
   margin: 10px;
-  padding-bottom: 30px;
+ 
+  height: 350px;
 }
 
 body {
   background-color: #c8e6c9;
-  padding-top: 170px;
+  padding-top: 200px;
 }
 
-.codelab-body {
-  height: 300px;
+
+
+.skills-body {
+
+  display: flex;
+  justify-content: flex-start;
 }
+

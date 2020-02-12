@@ -1,7 +1,7 @@
 import React from 'react';
 import reactIcon from './icons/react.png';
 import webRTCIcon from './icons/webrtc.svg';
-function ToolIcon({ img }) {
+export function ToolIcon({ img }) {
   return <img className='tool-image' src={img} alt='tool icon' />;
 }
 

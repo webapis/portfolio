@@ -1,0 +1,53 @@
+.skill-container {
+  width: 80%;
+}
+
+.skill-level {
+  background-color: green; // #c8e6c9;
+  width: 100%;
+
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.level-column {
+  flex: 1;
+  background-color: #e8f5e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.skill-level-title {
+  background-color: #a5d6a7;
+  width: 100px;
+  height: 100%;
+  line-height: 3;
+}
+
+.skill-component {
+  display: flex;
+}
+
+.tool {
+  flex: 1;
+  background-color:#a5d6a7;
+}
+
+.level {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  background-color:#e8f5e9;
+
+  div {
+    width: 100px;
+    background-color: #a5d6a7;
+  }
+}
+
+.skill-component{
+ border-bottom: white 3px solid;
+}
+

@@ -19,7 +19,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 10px;
+  margin-top: 0;
   position: fixed;
+  z-index: 5;
   left: 0;
   top: 0;
   width: 100%;
@@ -115,7 +117,8 @@ h2 {
 }
 
 .certification-body,
-.codelab-body {
+.codelab-body,
+.skills-body, .aboutme-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,15 +134,20 @@ h2 {
           align-items: center;
   background-color: white;
   margin: 10px;
-  padding-bottom: 30px;
+  height: 350px;
 }
 
 body {
   background-color: #c8e6c9;
-  padding-top: 170px;
+  padding-top: 200px;
 }
 
-.codelab-body {
-  height: 300px;
+.skills-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 /*# sourceMappingURL=App.css.map */

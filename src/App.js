@@ -2,9 +2,10 @@ import React from 'react';
 import myImage from './my-picture.jpg';
 import SocialIconContainer from './components/social-icons/social-icon-container';
 import CertificateContainer from './components/certificate/certificate-container';
-import CodeLabContainer from './components/codelab/CodeLabContainer'
+import CodeLabContainer from './components/codelab/CodeLabContainer';
+import SkillsContainer from './components/skills/SkillContainer';
+import AboutMeContainer from './components/about-me/AboutMe';
 import './App.css';
-
 
 function App() {
   return (
@@ -21,22 +22,28 @@ function App() {
           </div>
         </div>
         <div className='nav'>
-          <a  href='#'>ABOUT ME</a>
+          <a href='#'>WHO AM I</a>
           <a href='#'>CERTIFICATES</a>
           <a href='#'>SKILLS</a>
           <a href='#'>CODELAB</a>
           <a href='#'>CONTACT ME</a>
         </div>
       </div>
-      <div className="certification-body">
-        <h1>Certifications</h1>
+      <div className='aboutme-body'>
+        <AboutMeContainer title='WHO AM I' />
+      </div>
+      <div className='skills-body'>
+        <h1>SKILLS</h1>
+        <SkillsContainer />
+      </div>
+      <div className='certification-body'>
         <div className='container'>
           <CertificateContainer />
         </div>
       </div>
 
-      <div className="codelab-body">
-        <h1>CodeLab</h1>
+      <div className='codelab-body'>
+        <h1>CODE LAB</h1>
         <CodeLabContainer />
       </div>
     </div>

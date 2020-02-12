@@ -1,0 +1,72 @@
+.skill-container {
+  width: 80%;
+}
+
+.skill-level {
+  background-color: green;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.level-column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #e8f5e9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+}
+
+.skill-level-title {
+  background-color: #a5d6a7;
+  width: 100px;
+  height: 100%;
+  line-height: 3;
+}
+
+.skill-component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tool {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #a5d6a7;
+}
+
+.level {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e8f5e9;
+}
+
+.level div {
+  width: 100px;
+  background-color: #a5d6a7;
+}
+
+.skill-component {
+  border-bottom: white 3px solid;
+}
+/*# sourceMappingURL=style.css.map */
